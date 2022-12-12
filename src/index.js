@@ -10,7 +10,7 @@ const refs = {
     countryInfo: document.querySelector('.country-info')
 }
 
-refs.input.addEventListener('input', debounce(onInputActions, 1500))
+refs.input.addEventListener('input', debounce(onInputActions, DEBOUNCE_DELAY))
 
 
 function onInputActions(e) {
